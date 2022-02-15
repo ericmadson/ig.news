@@ -36,6 +36,8 @@ export default function Home({product}: HomeProps) {
   )
 }
 
+// Static Site Generator: getStaticProps
+// Server Side Rendering: getServerProps
 export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1KRofkINJw0UZhnnK7YvpxwJ')
 
